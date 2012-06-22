@@ -5,7 +5,7 @@
 
 
 (deftest fibtest
-  (future-facts "about the fib function"
+  (facts "about the fib function"
          (fib 0) => 0
          (fib 1) => 1
          (fib 3) => 2

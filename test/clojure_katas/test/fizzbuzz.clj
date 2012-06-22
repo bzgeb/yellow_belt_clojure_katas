@@ -5,7 +5,7 @@
 
 
 (deftest test-fizzbuzz
-  (future-facts "about fizzbuzz"
+  (facts "about fizzbuzz"
         (answer 3) => "fizz"
         (answer 5) => "buzz"
         (answer 15) => "fizzbuzz"

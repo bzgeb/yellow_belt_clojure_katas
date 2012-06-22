@@ -7,5 +7,8 @@
 ;; A knight is addressed as Sir
 ;; The return string should be "Welcome (the title) (last name)
 
-(defn welcome [last-name is-woman? is-sir?])
-
+(defn welcome [last-name is-woman? is-sir?]
+  (let [f (fn [title] (str "Welcome " title))]
+    (str (cond is-sir?   (f "Sir ")
+               is-woman? (f "Ms. ")
+               true      (f "Mr. ")) last-name)))

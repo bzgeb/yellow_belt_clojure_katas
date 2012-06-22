@@ -5,8 +5,8 @@
 
 
 (deftest countdown-test
-  (future-fact (countdown 5) => '(5 4 3 2 1 0))
-  (future-fact (countdown 0) => '(0)))
+  (fact (countdown 5) => '(5 4 3 2 1 0))
+  (fact (countdown 0) => '(0)))
 
 
 

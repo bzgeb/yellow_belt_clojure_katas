@@ -5,4 +5,4 @@
 
 
 (deftest reverse-word-test
-  (future-fact (reverse-word "looc") => "cool"))
+  (fact (reverse-word "looc") => "cool"))

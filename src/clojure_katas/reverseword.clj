@@ -2,4 +2,5 @@
 
 ;; Reverse a given input word
 
-(defn reverse-word [word])
+(defn reverse-word [word]
+  (apply str (reverse word)))

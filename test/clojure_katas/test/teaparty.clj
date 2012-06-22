@@ -5,7 +5,7 @@
 
 
 (deftest tea-party-test
-  (future-fact (welcome "Austen" true false) => "Welcome Ms. Austen")
-  (future-fact (welcome "Orwell" false false) => "Welcome Mr. Orwell")
-  (future-fact (welcome "Newton" false true) => "Welcome Sir Newton"))
+  (fact (welcome "Austen" true false) => "Welcome Ms. Austen")
+  (fact (welcome "Orwell" false false) => "Welcome Mr. Orwell")
+  (fact (welcome "Newton" false true) => "Welcome Sir Newton"))
 

@@ -5,5 +5,7 @@
 ;; gcd(a,0) = a
 ;; gcd(b, a mod b)
 
-(defn gcd [a b])
+(defn gcd [a b]
+  (if (zero? b) a
+    (recur b (mod a b))))
 

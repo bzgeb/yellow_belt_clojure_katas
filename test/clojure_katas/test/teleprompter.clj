@@ -8,7 +8,7 @@
               "brainspin" "insomnia"})
 
 (deftest teleprompter-test
-  (future-facts "about translate"
+  (facts "about translate"
          (translate "In the hizzle" dict-1)
          => "In the house"
          (translate "In the hizzle, hizzle" dict-1)
